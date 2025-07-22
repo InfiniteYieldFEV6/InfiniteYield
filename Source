@@ -322,13 +322,12 @@ Title.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
 Title.BorderSizePixel = 0
 Title.Size = UDim2.new(0, 250, 0, 20)
 Title.Position = UDim2.new(0, 0, 0, 0)
-Title.Font = Enum.Font.SourceSans
+Title.Font = Enum.Font.SourceSansBold
 Title.TextSize = 18
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.Text = "Infinite Yield FE v" .. currentVersion
+Title.TextXAlignment = Enum.TextXAlignment.Left
 
--- Dev/Tester Info
-local SubTitle = Instance.new("TextLabel")
 SubTitle.Name = "SubTitle"
 SubTitle.Parent = Holder
 SubTitle.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
@@ -339,6 +338,7 @@ SubTitle.Font = Enum.Font.SourceSans
 SubTitle.TextSize = 16
 SubTitle.TextColor3 = Color3.new(0.8, 0.8, 0.8)
 SubTitle.Text = "Developer: NullTrace // Tester: Taz"
+SubTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 do
 	local emoji = ({
