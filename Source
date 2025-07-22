@@ -326,7 +326,6 @@ Title.Font = Enum.Font.SourceSansBold
 Title.TextSize = 18
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.Text = "Infinite Yield FE v" .. currentVersion
-Title.TextXAlignment = Enum.TextXAlignment.Left
 
 SubTitle.Name = "SubTitle"
 SubTitle.Parent = Holder
@@ -338,7 +337,6 @@ SubTitle.Font = Enum.Font.SourceSans
 SubTitle.TextSize = 16
 SubTitle.TextColor3 = Color3.new(0.8, 0.8, 0.8)
 SubTitle.Text = "Developer: NullTrace // Tester: Taz"
-SubTitle.TextXAlignment = Enum.TextXAlignment.Left
 
 do
 	local emoji = ({
