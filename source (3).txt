@@ -2853,20 +2853,20 @@ reference = (function()
 	local inviteButton = main:FindFirstChild("InviteButton",true)
 	local lastPress = nil
 	inviteButton.MouseButton1Click:Connect(function()
-		if everyClipboard then
-			toClipboard("https://discord.gg/78ZuWSq")
-			inviteButton.Text = "Copied"
+		local func = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
+		if func then
+			inviteButton.Text = "Disabled"
 		else
-			inviteButton.Text = "No Clipboard Function, type out the link"
+			inviteButton.Text = "Disabled"
 		end
 		local pressTime = tick()
 		lastPress = pressTime
 		wait(2)
 		if lastPress ~= pressTime then return end
-		inviteButton.Text = "Copy Discord Invite Link (https://discord.gg/78ZuWSq)"
+		inviteButton.Text = "Disabled"
 	end)
 	dragGUI(main)
-	main.Parent = ScaledHolder
+	main.Parent = PARENT
 
 	ReferenceButton.MouseButton1Click:Connect(function()
 		main:TweenPosition(UDim2.new(0.5,-250,0.5,-150), "InOut", "Quart", 0.5, true, nil)
