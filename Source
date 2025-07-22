@@ -327,17 +327,6 @@ Title.TextSize = 18
 Title.TextColor3 = Color3.new(1, 1, 1)
 Title.Text = "Infinite Yield FE v" .. currentVersion
 
-SubTitle.Name = "SubTitle"
-SubTitle.Parent = Holder
-SubTitle.BackgroundColor3 = Color3.fromRGB(36, 36, 37)
-SubTitle.BorderSizePixel = 0
-SubTitle.Size = UDim2.new(0, 250, 0, 20)
-SubTitle.Position = UDim2.new(0, 0, 0, 20)
-SubTitle.Font = Enum.Font.SourceSans
-SubTitle.TextSize = 16
-SubTitle.TextColor3 = Color3.new(0.8, 0.8, 0.8)
-SubTitle.Text = "Developer: NullTrace // Tester: Taz"
-
 do
 	local emoji = ({
 		["01 01"] = "🎆",
